@@ -1,0 +1,14 @@
+#blank {
+    width: 200px;
+    height: 200px;
+}
+
+#uploaded {
+    width: 200px;
+    height: 200px;
+}
+
+#image {
+    width: fit-content;
+    height: fit-content;
+}
