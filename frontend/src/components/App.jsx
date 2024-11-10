@@ -1,14 +1,14 @@
 import React from "react";
-import Upload from "./Upload";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import NavBar from "./NavBar";
+import Page from "./Page";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <body>
-          <Upload />
-        </body>
-      </header>
+        <Page />
+        <NavBar />
     </div>
   );
 }

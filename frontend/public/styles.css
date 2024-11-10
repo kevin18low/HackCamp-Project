@@ -8,7 +8,44 @@
     height: 200px;
 }
 
+#upload {
+    justify-self: center;
+}
+
 #image {
     width: fit-content;
     height: fit-content;
+}
+
+#submit {
+    width: fit-content;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 5px;
+    background-color: grey;
+    color: white;
+}
+
+#nav {
+    background-color: grey;
+    height: fit-content;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+#nav-cont {
+    width: fit-content;
+}
+
+#date {
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+.App {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
 }

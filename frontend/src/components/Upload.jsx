@@ -14,12 +14,12 @@ function Upload() {
     }
 
     return (
-        <div>
-            <div id="image" onClick={handleClick}>
-                {image ? <img id="uploaded" src={URL.createObjectURL(image)} alt=""></img> : <img id="blank" src="" alt=""></img>}
+        <div id="upload">
+            <div id="image">
+                {image ? <img id="uploaded" src={URL.createObjectURL(image)} alt=""></img> : <img id="blank" src="./images/blank.jpg" alt=""></img>}
             </div>
-            
-            <input type="file" ref={inputRef} name="image" onChange={handleImage} style={{ display: "none"}}/>
+            <input type="file" ref={inputRef} name="image" onChange={handleImage} style={{display: "none"}}/>
+            <button id="submit" onClick={handleClick}>Join the scrap!</button>
         </div>
     )
 }
