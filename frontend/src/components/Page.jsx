@@ -7,7 +7,7 @@ function Page() {
     return (
         <div>
             <div>
-                <h1 id="date">{date}</h1>
+                <h1 id="date" className="label">{date}</h1>
             </div>
             <div>
                 <Upload />

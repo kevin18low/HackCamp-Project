@@ -14,7 +14,7 @@ function Upload() {
     }
 
     return (
-        <div id="upload">
+        <div id="upload" className="label">
             <div id="image">
                 {image ? <img id="uploaded" src={URL.createObjectURL(image)} alt=""></img> : <img id="blank" src="./images/blank.jpg" alt=""></img>}
             </div>

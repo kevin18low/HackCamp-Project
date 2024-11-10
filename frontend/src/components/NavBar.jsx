@@ -4,12 +4,12 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function NavBar() {
   return (
-      <Navbar id="nav" data-bs-theme="dark">
+      <Navbar id="nav" className="label" data-bs-theme="dark">
         <Container id="nav-cont">
-          <Navbar.Brand href="#home">Home</Navbar.Brand>
+          <Navbar.Brand href="/">Home</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Create</Nav.Link>
-            <Nav.Link href="#features">Profile</Nav.Link>
+            <Nav.Link href="/createbook">Create</Nav.Link>
+            <Nav.Link href="/profile">Profile</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
