@@ -3,7 +3,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 function Selector({ choice, handleClick }) {
   return (
     <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
+      <Dropdown.Toggle variant="primary" id="dropdown-basic">
         {choice ? choice : ""}
       </Dropdown.Toggle>
 

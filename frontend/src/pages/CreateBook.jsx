@@ -1,4 +1,5 @@
 import NavBar from "../components/NavBar";
+import Logo from "../components/Logo";
 import Selector from "../components/Selector";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -30,16 +31,19 @@ function Create() {
 
     return (
         <div id="book-style">
+            <Logo />
             <h1 className="label">Let's Scrap!</h1>
-            <h2>Pick a Name For Your Scrap</h2>
-            <input type="text" onChange={changeTitle}/>
-            <h2>Pick a Book Length</h2>
-            <Selector choice={selectedChoice} handleClick={handleSelect}/>
-            <h2>Enter a Book Description</h2>
-            <input type="text" onChange={changeDesc}/>
-            <NavBar />
-            <br />
-            <button className="button" onClick={submit}>OK</button>
+            <div id="details">
+                <h6>Pick a Name For Your Scrap</h6>
+                <input type="text" onChange={changeTitle}/>
+                <h6>Pick a Book Type</h6>
+                <Selector choice={selectedChoice} handleClick={handleSelect}/>
+                <h6>Enter a Book Description</h6>
+                <input type="text" onChange={changeDesc}/>
+                <NavBar />
+                <br />
+                <button className="button" onClick={submit}>OK</button>
+            </div>
         </div>
     )
 }

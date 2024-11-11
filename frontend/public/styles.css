@@ -40,14 +40,16 @@
 }
 
 .label {
-    background-color: #124F8B;
-    color: white;
+    color: #124F8B;
     text-align: center;
 }
 
 .book-img {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #book-style {
@@ -56,6 +58,10 @@
     text-align: center;
 }   
 
+#book-header {
+    text-align: center;
+}
+
 #dropdown-basic {
     width: 150px;
 }
@@ -63,6 +69,10 @@
 #header {
     height: 100px;
     width: 100vw;
+}
+
+#home-page {
+    text-align: center;
 }
 
 #logo {
@@ -77,8 +87,8 @@
 }
 
 .nav-button {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .button {
@@ -96,6 +106,7 @@
 
 input {
     margin: 10px !important;
+    margin-top: 5px !important;
     border-color: #124F8B;
     border-radius: 5px;
     border-width: 3px;
@@ -103,6 +114,27 @@ input {
 
 .style-header {
     margin: 15px !important;
+}
+
+h2 {
+    color: #124F8B !important;
+}
+
+h6 {
+    color: #124F8B !important;
+}
+
+.caption {
+    text-align: left;
+    width: 50%;
+    margin-left: 30px;
+}
+
+.home-nav {
+    margin: 10px;
+    margin-left: 30px;
+    text-align: left;
+    color: #124F8B;
 }
 
 .App {
@@ -121,4 +153,8 @@ input {
 .highlight {
     border-width: 20px !important;
     border-color: yellow !important;
+}
+
+.dropdown {
+    margin-bottom: 10px;
 }
