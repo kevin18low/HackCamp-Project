@@ -39,7 +39,7 @@ function Create() {
             <input type="text" onChange={changeDesc}/>
             <NavBar />
             <br />
-            <button onClick={submit}>OK</button>
+            <button className="button" onClick={submit}>OK</button>
         </div>
     )
 }

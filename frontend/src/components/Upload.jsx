@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useRef } from "react";
+import placeholder from "../images/blank.jpg";
 
 function Upload() {
     const inputRef = useRef(null);
@@ -16,10 +17,10 @@ function Upload() {
     return (
         <div id="upload" className="label">
             <div id="image">
-                {image ? <img id="uploaded" src={URL.createObjectURL(image)} alt=""></img> : <img id="blank" src="./images/blank.jpg" alt=""></img>}
+                {image ? <img id="uploaded" src={URL.createObjectURL(image)} alt=""></img> : <img id="blank" src={placeholder} alt=""></img>}
             </div>
             <input type="file" ref={inputRef} name="image" onChange={handleImage} style={{display: "none"}}/>
-            <button id="submit" onClick={handleClick}>Join the scrap!</button>
+            <button id="submit" className="button" onClick={handleClick}>Join the scrap!</button>
         </div>
     )
 }

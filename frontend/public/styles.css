@@ -20,24 +20,27 @@
 #submit {
     width: fit-content;
     height: 40px;
-    border-radius: 10px;
     border-width: 5px;
     color: white;
 }
 
 #nav {
+    background-color: #FFFAF2;
     height: fit-content;
     position: fixed;
     bottom: 0;
     width: 100vw;
+    border-top: 5px solid #124F8B;
 }
 
 #nav-cont {
-    width: fit-content;
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
 }
 
 .label {
-    background-color: grey;
+    background-color: #124F8B;
     color: white;
     text-align: center;
 }
@@ -57,8 +60,65 @@
     width: 150px;
 }
 
+#header {
+    height: 100px;
+    width: 100vw;
+}
+
+#logo {
+    width: 60vw;
+    height: 100px;
+    align-self: center;
+}
+
+.header-icon {
+    width: 20vw;
+    height: 50px;
+}
+
+.nav-button {
+    width: 50px;
+    height: 50px;
+}
+
+.button {
+    border: 5px;
+    border-radius: 10px;
+    background-color: #124F8B;
+    color: white;
+    padding: 5px;
+    width: 125px;
+}
+
+#create-button {
+    margin-top: 15px;
+}
+
+input {
+    margin: 10px !important;
+    border-color: #124F8B;
+    border-radius: 5px;
+    border-width: 3px;
+}
+
+.style-header {
+    margin: 15px !important;
+}
+
 .App {
     display: grid;
     height: 100vh;
     width: 100vw;
+    background-color: #FFFAF2;
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    font-weight: 750 !important;
+    font-style: normal;
+}
+
+.highlight {
+    border-width: 20px !important;
+    border-color: yellow !important;
 }
