@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useRef } from "react";
-import placeholder from "../images/blank.jpg";
+import placeholder from "../images/blank.svg";
 
 function Upload() {
     const inputRef = useRef(null);

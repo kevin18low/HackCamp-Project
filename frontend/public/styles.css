@@ -6,6 +6,7 @@
 #uploaded {
     width: 200px;
     height: 200px;
+    border-radius: 10px;
 }
 
 #upload {
@@ -17,7 +18,19 @@
     height: fit-content;
 }
 
+#profile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#pfp {
+    width: 200px;
+    height: 200px;
+}
+
 #submit {
+    margin: 10px;
     width: fit-content;
     height: 40px;
     border-width: 5px;
@@ -30,7 +43,7 @@
     position: fixed;
     bottom: 0;
     width: 100vw;
-    border-top: 5px solid #124F8B;
+    border-top: 3px solid #124F8B;
 }
 
 #nav-cont {
@@ -137,6 +150,17 @@ h6 {
     color: #124F8B;
 }
 
+
+#friends {
+    display: flex;
+    justify-content: center;
+}
+
+.friend-img {
+    margin: 5px;
+    width: 50px;
+}
+
 .App {
     display: grid;
     height: 100vh;
@@ -148,11 +172,6 @@ h6 {
     font-family: "Nunito", sans-serif;
     font-weight: 750 !important;
     font-style: normal;
-}
-
-.highlight {
-    border-width: 20px !important;
-    border-color: yellow !important;
 }
 
 .dropdown {
